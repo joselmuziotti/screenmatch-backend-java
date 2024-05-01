@@ -14,6 +14,7 @@ public class Main {
                 La mejor película del fin del milenio
                 """;
         double evaluacionUsuario = 0;
+        double i = 0;
 
         System.out.println("Película: " + nombre);
         System.out.println(fechaDeLanzamiento);
@@ -29,11 +30,20 @@ public class Main {
             System.out.println("Película Retro Popular");
         }
 
-        for (int i = 0; i < 3; i++) {
+        /*for (int i = 0; i < 3; i++) {
             Scanner teclado = new Scanner(System.in);
             System.out.println("Evalúa la película");
             double evaluacionPelicula = teclado.nextDouble();
             evaluacionUsuario = evaluacionUsuario + evaluacionPelicula;
+        }
+        System.out.println("Evaluación promedio: " + evaluacionUsuario / 3);*/
+
+        while (i < 3){
+            Scanner teclado = new Scanner(System.in);
+            System.out.println("Evalúa la pelicula");
+            double evaluacionPelicula = teclado.nextDouble();
+            evaluacionUsuario = evaluacionUsuario + evaluacionPelicula;
+            i++;
         }
         System.out.println("Evaluación promedio: " + evaluacionUsuario / 3);
     }
